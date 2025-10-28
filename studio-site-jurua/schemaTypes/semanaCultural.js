@@ -12,13 +12,6 @@ export const semanaCultural = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'fotoGeral',
-      title: 'Foto Geral',
-      type: 'image',
-      options: { hotspot: true },
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
       name: 'descricaoGeral',
       title: 'Descrição Geral',
       type: 'text',

@@ -1,7 +1,7 @@
 import { semanaCultural } from './semanaCultural'
 import { galeria } from './galeria'
 import { dicionario } from './dicionario'
-import { blocoImagem } from './objects/blocoImagem'
+import { blocoImagem } from './objects/blocoSemanaCultural'
 import { cardGaleria } from './objects/cardGaleria'
 import { grupoFotos } from './objects/grupoFotos'
 
