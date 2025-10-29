@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juruá</title>
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="icon" type="image/png" href="../assets/images/logo_image.png">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="icon" type="image/png" href="../../assets/images/logo_image.png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -28,16 +28,16 @@
         </div>
         <nav class="w-full flex items-center justify-between px-8 py-6 absolute top-0 left-0 z-20">
             <div class="flex items-center gap-4">
-                <img src="../assets/images/logo_image.png" alt="Logo Juruá" class="h-10 w-auto"/>
+                <img src="../../assets/images/logo_image.png" alt="Logo Juruá" class="h-10 w-auto"/>
                 <span class="text-3xl font-bold text-white tracking-wide">JURUÁ</span>
             </div>
             <!-- Menu Desktop -->
             <ul class="hidden lg:flex items-center gap-8">
                 <li><a href="home.html" class="animated-underline text-white text-lg font-light transition-all relative">HOME</a></li>
-                <li><a href="semana-cultural.html" class="animated-underline text-white text-lg font-light transition-all relative">SEMANA CULTURAL</a></li>
-                <li><a href="o-guarani.html" class="animated-underline text-white text-lg font-light transition-all relative">O GUARANI</a></li>
-                <li><a href="galeria.html" class="animated-underline text-white text-lg font-light transition-all relative">GALERIA</a></li>
-                <li><a href="dicionario.html" class="animated-underline text-white text-lg font-light transition-all relative">DICIONARIO</a></li>
+                <li><a href="/source/pages/semana-cultural-page/semana-cultural.html" class="animated-underline text-white text-lg font-light transition-all relative">SEMANA CULTURAL</a></li>
+                <li><a href="/source/pages/guarani-page/o-guarani.html" class="animated-underline text-white text-lg font-light transition-all relative">O GUARANI</a></li>
+                <li><a href="/source/pages/galeria-page/galeria.html" class="animated-underline text-white text-lg font-light transition-all relative">GALERIA</a></li>
+                <li><a href="/source/pages/dicionario-page/dicionario.html" class="animated-underline text-white text-lg font-light transition-all relative">DICIONARIO</a></li>
             </ul>
             <!-- Botão Mobile (Hamburguer) -->
             <button id="menuToggle" aria-label="Abrir Menu" class="lg:hidden flex flex-col gap-1 focus:outline-none z-40 relative">
@@ -49,10 +49,10 @@
         <!-- Menu Mobile -->
         <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-[#742E05]/90 backdrop-blur-sm z-30 flex flex-col items-center gap-8 pt-24 text-white text-2xl font-light transform translate-x-full transition-transform duration-300 ease-in-out">
             <a href="home.html" class="text-white text-lg font-light transition-all relative">HOME</a>
-            <a href="semana-cultural.html" class="text-white text-lg font-light transition-all relative">SEMANA CULTURAL</a>
-            <a href="o-guarani.html" class="text-white text-lg font-light transition-all relative">O GUARANI</a>
-            <a href="galeria.html" class="text-white text-lg font-light transition-all relative">GALERIA</a>
-            <a href="dicionario.html" class="text-white text-lg font-light transition-all relative">DICIONARIO</a>
+            <a href="/source/pages/semana-cultural-page/semana-cultural.html" class="text-white text-lg font-light transition-all relative">SEMANA CULTURAL</a>
+            <a href="/source/pages/guarani-page/o-guarani.html" class="text-white text-lg font-light transition-all relative">O GUARANI</a>
+            <a href="/source/pages/galeria-page/galeria.html" class="text-white text-lg font-light transition-all relative">GALERIA</a>
+            <a href="/source/pages/dicionario-page/dicionario.html" class="text-white text-lg font-light transition-all relative">DICIONARIO</a>
         </div>
     </section>
 
@@ -77,10 +77,11 @@
             <p class="font-medium text-gray-900 mb-6">
             Clique no botão abaixo e inscreva-se para as <span class="font-semibold">próximas etapas!</span>
             </p>
-            <a href="semana-cultural.html" class="bg-[#742E05] hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-md transition-all shadow-md">INSCREVER-SE</a>
+            <a href="/source/pages/semana-cultural-page/semana-cultural.html" class="bg-[#742E05] hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-md transition-all shadow-md">INSCREVER-SE</a>
         </div>
     </section>
 
-    <script src="../scripts/main.js"></script>
+    <script src="/source/scripts/main.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>

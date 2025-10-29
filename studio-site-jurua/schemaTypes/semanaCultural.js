@@ -13,9 +13,15 @@ export const semanaCultural = defineType({
     }),
     defineField({
       name: 'descricaoGeral',
-      title: 'Descrição Geral',
-      type: 'text',
-      validation: (rule) => rule.required(),
+      title: 'Descrição Geral (Tópicos)',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          title: 'Tópico'
+        }
+      ],
+      validation: (rule) => rule.min(1).max(5),
     }),
     defineField({
       name: 'blocos',
