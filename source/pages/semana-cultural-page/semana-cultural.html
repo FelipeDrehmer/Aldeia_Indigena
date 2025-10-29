@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="../../assets/images/logo_image.png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="scroll-smooth">
     <section class="relative w-full h-screen flex flex-col overflow-hidden bg-black heroSection">
         <div class="hidden lg:flex absolute left-0 top-0 h-full w-[50%] clip-diagonal z-10 items-center">
             <div class="px-10 py-16 max-w-lg">
@@ -50,11 +50,11 @@
         </div>
     </section>
 
-    <section class="py-10 lg:px-6 lg:py-12">
+    <section id="eventoPrincipal" = class="py-10 lg:px-6 lg:py-12">
         <div class="w-full max-w-[90%] lg:max-w-[70%] mx-auto flex flex-col lg:flex-row gap-10 items-center">  
             <!-- Mapa -->
             <div class="flex-1">
-                <h2 class="font-extrabold tracking-widest text-orange-400 mb-4 text-3xl text-[34px] lg:text-6xl">20ª Edição <span class="text-[#742E05]">2026</span></h2>
+                <h2 id="tituloGeral" class="font-extrabold tracking-widest text-orange-400 mb-4 text-3xl text-[34px] lg:text-6xl">20ª Edição <span class="text-[#742E05]">2026</span></h2>
                 <div class="w-full h-[300px] rounded-lg shadow-md overflow-hidden lg:h-[600px]">
                     <iframe
                     class="w-full h-full"
@@ -67,12 +67,7 @@
             </div>
             <!-- Informações -->
             <div class="flex-1 flex flex-col items-center justify-center space-y-4 text-black">
-                <ul class="list-disc pl-5 text-lg leading-relaxed">
-                    <li>Informações gerais sobre a nova edição da semana cultural.</li>
-                    <li>Data do evento.</li>
-                    <li>Local do evento.</li>
-                    <li>Atrações do evento.</li>
-                    <li>Complemento: Lorem ipsum dolor sit amet, consectetur adipiscing elit mollit anim id est laborum.</li>
+                <ul id="descricaoGeral" class="list-disc pl-5 text-lg leading-relaxed">
                 </ul>
                 <button class="bg-[#742E05] text-white px-6 py-3 rounded-md hover:bg-orange-700 transition">INSCREVER-SE</button>
             </div>
@@ -81,21 +76,18 @@
 
     <hr class="w-4/5 border-4 border-[#742E05] rounded-full mx-auto my-10">
 
-    <section class="py-11">
+    <section id="blocoEventosAnterioresE" class="py-11">
         <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row gap-8 items-center">
             
             <!-- Imagem esquerda -->
             <div class="flex-1 overflow-hidden">
-                <img loading="lazy" id="imagemE" src="../../assets/images/img-36 1.png" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out">
+                <img id="imagemE" src="../../assets/images/img-36 1.png" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out">
             </div>
             <!-- Texto direita -->
             <div class="flex-1 bg-[#D6C0A4] p-8 rounded-lg">
                 <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4">
                     19ª Edição <span class="text-[#742E05]">2025</span>
                 </h2>
-                <p class="text-white leading-relaxed mb-3">
-                    A 19ª edição (2025) consolidou o encontro como referência cultural no Paraná.
-                </p>
                 <p class="text-white leading-relaxed">
                     Realizada na Escola Estadual Indígena Araju Porã, manteve o foco nas apresentações, no artesanato e nas práticas tradicionais, mas também reforçou o papel do evento como espaço de visibilidade e diálogo entre indígenas e não indígenas.
                 </p>
@@ -103,7 +95,7 @@
         </div>
     </section>
 
-    <section class="py-11">
+    <section id="blocoEventosAnterioresD" class="py-11">
         <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row-reverse gap-8 items-center">
             <!-- Imagem direita -->
             <div class="flex-1 overflow-hidden">
@@ -114,9 +106,6 @@
                 <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4">
                     18ª Edição <span class="text-[#742E05]">2024</span>
                 </h2>
-                <p class="text-white leading-relaxed mb-3">
-                    A 18ª edição (2024) da Semana Cultural Indígena Guarani reuniu mais de cinco mil pessoas na Tekoha Añetete.
-                </p>
                 <p class="text-white leading-relaxed">
                     Durante três dias, o evento ofereceu apresentações de dança e música, exposição e venda de artesanato, além de novidades como aulas de Tupi-Guarani e trilhas guiadas.
                 </p>

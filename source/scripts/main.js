@@ -1,3 +1,32 @@
+import { createClient } from '@sanity/client';
+import imageUrlBuilder from '@sanity/image-url';
+
+const sanity = createClient({
+    projectId: 'hbc0k9b0',
+    dataset: 'production',
+    apiVersion: '2023-01-01',
+    useCdn: true
+});
+
+const builder = imageUrlBuilder(sanity);
+export const urlFor = (source) => builder.image(source);
+
+
+export async function buscarSemanaCultural() {
+    const query = `*[_type == "semanaCultural"][0]{
+        tituloGeral,
+        descricaoGeral,
+        blocos[]{
+            titulo,
+            descricao,
+            imagem
+        }
+    }`;
+
+    const dados = await sanity.fetch(query);
+    return dados;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const btnMenuHamburguer = document.getElementById('menuToggle');
     const menu = document.getElementById('mobileMenu');
@@ -45,4 +74,5 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleMenu();
         }
     });
+
 });
