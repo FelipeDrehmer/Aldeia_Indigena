@@ -1,32 +1,31 @@
-import { createClient } from '@sanity/client';
-import imageUrlBuilder from '@sanity/image-url';
+// // Inicializa o client Sanity
+// const sanity = sanityClient({
+//     projectId: 'hbc0k9b0',
+//     dataset: 'production',
+//     apiVersion: '2023-01-01',
+//     useCdn: true
+// });
 
-const sanity = createClient({
-    projectId: 'hbc0k9b0',
-    dataset: 'production',
-    apiVersion: '2023-01-01',
-    useCdn: true
-});
+// // Builder de imagens
+// const builder = imageUrlBuilder(sanity);
+// const urlFor = (source) => builder.image(source);
 
-const builder = imageUrlBuilder(sanity);
-export const urlFor = (source) => builder.image(source);
+// // Função para buscar semana cultural
+// async function buscarSemanaCultural() {
+//     const query = `*[_type == "semanaCultural"][0]{
+//         tituloGeral,
+//         descricaoGeral,
+//         blocos[]{
+//             titulo,
+//             descricao,
+//             imagem
+//         }
+//     }`;
+//     const dados = await sanity.fetch(query);
+//     return dados;
+// }
 
-
-export async function buscarSemanaCultural() {
-    const query = `*[_type == "semanaCultural"][0]{
-        tituloGeral,
-        descricaoGeral,
-        blocos[]{
-            titulo,
-            descricao,
-            imagem
-        }
-    }`;
-
-    const dados = await sanity.fetch(query);
-    return dados;
-}
-
+// Menu hamburguer
 document.addEventListener('DOMContentLoaded', () => {
     const btnMenuHamburguer = document.getElementById('menuToggle');
     const menu = document.getElementById('mobileMenu');
@@ -40,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnMenuHamburguer.setAttribute('aria-expanded', String(isOpen));
         body.classList.toggle('overflow-hidden', isOpen);
 
-        // Ícone hamburguer ↔ X
         if (lines.length === 3) {
             lines[0].classList.toggle('rotate-45');
             lines[0].classList.toggle('translate-y-[6px]');
