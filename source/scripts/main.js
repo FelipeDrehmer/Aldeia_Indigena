@@ -1,30 +1,3 @@
-// // Inicializa o client Sanity
-// const sanity = sanityClient({
-//     projectId: 'hbc0k9b0',
-//     dataset: 'production',
-//     apiVersion: '2023-01-01',
-//     useCdn: true
-// });
-
-// // Builder de imagens
-// const builder = imageUrlBuilder(sanity);
-// const urlFor = (source) => builder.image(source);
-
-// // Função para buscar semana cultural
-// async function buscarSemanaCultural() {
-//     const query = `*[_type == "semanaCultural"][0]{
-//         tituloGeral,
-//         descricaoGeral,
-//         blocos[]{
-//             titulo,
-//             descricao,
-//             imagem
-//         }
-//     }`;
-//     const dados = await sanity.fetch(query);
-//     return dados;
-// }
-
 // Menu hamburguer
 document.addEventListener('DOMContentLoaded', () => {
     const btnMenuHamburguer = document.getElementById('menuToggle');
