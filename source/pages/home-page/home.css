@@ -1,0 +1,42 @@
+.bannerfront{
+    display: flex;
+    width: 120%;
+    padding: 10px;
+    margin-left: -5%;
+
+    background-color: #49604f;
+    justify-content: center;
+    transform: rotate(5deg);
+}
+.imgs-front{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+.imgs-front img{
+    width: 40%;
+}
+.bannerback{
+    position: relative;
+    top: -20rem;
+    display: flex;
+    z-index: -1;
+    width: 110%;
+    padding: 20px;
+    margin-left: -7%;
+    background-color: #996c3b;
+    justify-content: center;
+    transform: rotate(-9deg)
+}
+.imgs-back{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.imgs-back img{
+    width: 25%;
+}
+
+#banner{
+    overflow-x: hidden;
+}
