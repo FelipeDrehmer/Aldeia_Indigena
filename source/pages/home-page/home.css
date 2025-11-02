@@ -1,40 +1,57 @@
+.body, html{
+    overflow-x: hidden;
+}
 .bannerfront{
     display: flex;
-    width: 120%;
-    padding: 10px;
+    width: 106%;
+    padding: 1%;
     margin-left: -5%;
 
     background-color: #49604f;
     justify-content: center;
     transform: rotate(5deg);
+    overflow-x: hidden;
+
 }
 .imgs-front{
     display: flex;
-    width: 65%;
+    width: 100%;
+    align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
+
+    margin-left: 14%;
+    margin-right: 15%;
 }
 .imgs-front img{
-    width: 40%;
+    width: 45%;
+    border-radius: 5%;
+    overflow-x: hidden;
 }
 .bannerback{
-    position: relative;
-    top: -20rem;
     display: flex;
-    z-index: -1;
     width: 110%;
-    padding: 20px;
-    margin-left: -7%;
+    padding: 1%;
+    margin-left: -5%;
+
     background-color: #996c3b;
     justify-content: center;
-    transform: rotate(-9deg)
+    transform: rotate(-7deg);
+    overflow-x: hidden;
+    clip-path: polygon(0 0, 98% 0, 95% 100%, 0% 100%);
 }
 .imgs-back{
+    position: relative;
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 .imgs-back img{
-    width: 25%;
+    width: 30%;
+    border-radius: 5%;
+    overflow-x: hidden;
 }
 
 #banner{
