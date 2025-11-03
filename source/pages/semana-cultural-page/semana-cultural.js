@@ -20,16 +20,25 @@ async function getData() {
     }
 }
 
-// 1. "await function" é inválido — aqui deve ser apenas "async function".
-// 2. O código de rolagem estava duplicado e desorganizado.
-// 3. "document.querySelector('')" precisa apontar para algo real.
-
 async function montarPagina(resposta) {
     try {
-        const tituloGeral = document.querySelector("#tituloGeral");
 
+        const tituloGeral = document.querySelector("#tituloGeral");
         if (tituloGeral && resposta.tituloGeral) {
             tituloGeral.textContent = resposta.tituloGeral;
+        }
+
+        const descricaoTopico = document.querySelector("#descricaoGeral");
+        if (descricaoTopico && resposta.descricaoGeral) {
+
+            descricaoTopico.innerHTML = "";
+
+            resposta.descricaoGeral.forEach((texto) => {
+                const itemTopico = document.createElement("li");
+                itemTopico.textContent = texto;
+                itemTopico.classList.add("text-3xl", "text-black", "mb-2", "leading-relaxed"); 
+                descricaoTopico.appendChild(itemTopico);
+            });
         }
 
         const params = new URLSearchParams(window.location.search);
