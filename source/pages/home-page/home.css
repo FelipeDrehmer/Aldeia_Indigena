@@ -57,3 +57,17 @@
 #banner{
     overflow-x: hidden;
 }
+
+.info{
+    clip-path: polygon(0% 20%, 100% 0%, 100% 140%, 0% 100%);
+    background: #D6C0A4;
+}
+
+.texto-guarani h1{
+    font-weight: 700;
+    color: white;
+}
+.texto-guarani h3{
+    font-weight: 100;
+    color: white;
+}
