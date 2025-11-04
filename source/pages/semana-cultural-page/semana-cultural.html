@@ -10,15 +10,17 @@
 </head>
 <body class="scroll-smooth">
     <section class="relative w-full h-screen flex flex-col overflow-hidden bg-black heroSection">
-        <div class="hidden lg:flex absolute left-0 top-0 h-full w-[50%] clip-diagonal z-10 items-center">
+        <div class="hidden lg:flex absolute left-0 top-0 h-full w-[50%] z-10 items-center clip-diagonal">
             <div class="px-10 py-16 max-w-lg">
                 <h2 class="text-5xl font-extrabold tracking-widest text-orange-400 mb-1">SEMANA</h2>
                 <h2 class="text-5xl font-extrabold tracking-widest text-white mb-6">CULTURAL</h2>
             </div>
         </div>
-        <div class="lg:hidden flex flex-col justify-center items-center h-full z-10">
-            <h2 class="text-4xl font-extrabold tracking-widest text-orange-400 mb-1">SEMANA</h2>
-            <h2 class="text-4xl font-extrabold tracking-widest text-white mb-6">CULTURAL</h2>
+        <div class="lg:hidden relative flex justify-center items-center h-full z-10">
+            <div class="clip-diagonal-quadrado flex flex-col justify-center items-center p-6">
+                <h2 class="text-4xl font-extrabold tracking-widest text-orange-400 mb-1">SEMANA</h2>
+                <h2 class="text-4xl font-extrabold tracking-widest text-white">CULTURAL</h2>
+            </div>
         </div>
         <nav class="w-full flex items-center justify-between px-8 py-6 absolute top-0 left-0 z-20">
             <div class="flex items-center gap-4">
@@ -50,47 +52,40 @@
         </div>
     </section>
 
-    <section id="eventoPrincipal" class="py-10 lg:px-6 lg:py-12">
+    <section id="eventoPrincipal" class="py-20 lg:px-6">
+        <h2 id="tituloGeral" class="font-extrabold tracking-widest text-orange-400 mb-10 text-3xl lg:text-5xl text-center"></h2>
         <div class="max-w-[90%] lg:max-w-[70%] mx-auto flex flex-col lg:flex-row gap-10 items-center">  
-            <!-- Mapa -->
             <div class="flex-1">
-                <h2 id="tituloGeral" class="font-extrabold tracking-widest text-orange-400 mb-4 text-3xl lg:text-5xl lg:text-center lg:mx-auto"> <span class="text-[#742E05]"> </span></h2>
                 <div class="w-full h-[300px] rounded-lg shadow-md overflow-hidden lg:h-[600px]">
                     <iframe
-                    class="w-full h-full"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7235.22354133619!2d-54.105295153763365!3d-24.9452922402257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f40a156e5ec663%3A0x7042238423d34286!2sDiamante%20D'Oeste%2C%20PR%2C%2085896-000!5e0!3m2!1spt-PT!2sbr!4v1761656014399!5m2!1spt-PT!2sbr"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                        class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7235.22354133619!2d-54.105295153763365!3d-24.9452922402257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f40a156e5ec663%3A0x7042238423d34286!2sDiamante%20D'Oeste%2C%20PR%2C%2085896-000!5e0!3m2!1spt-PT!2sbr!4v1761656014399!5m2!1spt-PT!2sbr"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
-            <!-- Informações -->
-            <div class="flex-1 flex flex-col items-center justify-center space-y-4 text-black">
-                <ul id="descricaoGeral" class="list-disc pl-5 text-lg leading-relaxed">
-                </ul>
-                <button class="bg-[#742E05] text-white px-6 py-3 rounded-md hover:bg-orange-700 transition">INSCREVER-SE</button>
+            <div class="flex-1 flex flex-col items-center justify-center text-black">
+                <ul id="descricaoGeral" class="list-disc pl-5 text-lg leading-relaxed font-thin"></ul>
+                <button class="bg-[#742E05] text-white px-6 py-4 rounded-md w-[250px] hover:bg-orange-700 transition">
+                    INSCREVER-SE
+                </button>
             </div>
         </div>
     </section>
 
     <hr class="w-4/5 border-4 border-[#742E05] rounded-full mx-auto my-10">
 
-    <section class="py-11 blocos blocoEsquerda">
-        <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row gap-8 items-center">
-            
-            <!-- Imagem esquerda -->
+    <section class="py-20 blocos blocoEsquerda">
+        <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row gap-8 items-center">      
+
             <div class="flex-1 overflow-hidden">
-                <img id="imagemE" src="../../assets/images/img-36 1.png" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out imgBloco">
+                <img id="imagemE" src="" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out imgBloco">
             </div>
-            <!-- Texto direita -->
             <div class="flex-1 bg-[#D6C0A4] p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco">
-                    19ª Edição <span class="text-[#742E05]">2025</span>
-                </h2>
-                <p class="text-white leading-relaxed descricaoBloco">
-                    Realizada na Escola Estadual Indígena Araju Porã, manteve o foco nas apresentações, no artesanato e nas práticas tradicionais, mas também reforçou o papel do evento como espaço de visibilidade e diálogo entre indígenas e não indígenas.
-                </p>
+                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
+                <p class="text-white leading-relaxed descricaoBloco"></p>
             </div>
         </div>
     </section>
@@ -99,16 +94,12 @@
         <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row-reverse gap-8 items-center">
             <!-- Imagem direita -->
             <div class="flex-1 overflow-hidden">
-                <img id="imagemD" src="../../assets/images/img-13 2.png" alt="Imagem edição 2024" class="w-full h-full object-cover rounded-lg opacity-0 translate-x-20 transition-all duration-700 ease-out imgBloco">
+                <img id="imagemD" src="" alt="Imagem edição 2024" class="w-full h-full object-cover rounded-lg opacity-0 translate-x-20 transition-all duration-700 ease-out imgBloco">
             </div>
             <!-- Texto esquerda -->
             <div class="flex-1 bg-[#1C3824]/80 p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco">
-                    18ª Edição <span class="text-[#742E05]">2024</span>
-                </h2>
-                <p class="text-white leading-relaxed descricaoBloco">
-                    Durante três dias, o evento ofereceu apresentações de dança e música, exposição e venda de artesanato, além de novidades como aulas de Tupi-Guarani e trilhas guiadas.
-                </p>
+                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
+                <p class="text-white leading-relaxed descricaoBloco"></p>
             </div>
         </div>
     </section>
@@ -118,16 +109,12 @@
             
             <!-- Imagem esquerda -->
             <div class="flex-1 overflow-hidden">
-                <img id="imagemE" src="../../assets/images/img-36 1.png" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out imgBloco">
+                <img id="imagemE" src="" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out imgBloco">
             </div>
             <!-- Texto direita -->
             <div class="flex-1 bg-[#D6C0A4] p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco">
-                    19ª Edição <span class="text-[#742E05]">2025</span>
-                </h2>
-                <p class="text-white leading-relaxed descricaoBloco">
-                    Realizada na Escola Estadual Indígena Araju Porã, manteve o foco nas apresentações, no artesanato e nas práticas tradicionais, mas também reforçou o papel do evento como espaço de visibilidade e diálogo entre indígenas e não indígenas.
-                </p>
+                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
+                <p class="text-white leading-relaxed descricaoBloco"></p>
             </div>
         </div>
     </section>
@@ -136,16 +123,12 @@
         <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row-reverse gap-8 items-center">
             <!-- Imagem direita -->
             <div class="flex-1 overflow-hidden">
-                <img id="imagemD" src="../../assets/images/img-13 2.png" alt="Imagem edição 2024" class="w-full h-full object-cover rounded-lg opacity-0 translate-x-20 transition-all duration-700 ease-out imgBloco">
+                <img id="imagemD" src="" alt="Imagem edição 2024" class="w-full h-full object-cover rounded-lg opacity-0 translate-x-20 transition-all duration-700 ease-out imgBloco">
             </div>
             <!-- Texto esquerda -->
             <div class="flex-1 bg-[#1C3824]/80 p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco">
-                    18ª Edição <span class="text-[#742E05]">2024</span>
-                </h2>
-                <p class="text-white leading-relaxed descricaoBloco">
-                    Durante três dias, o evento ofereceu apresentações de dança e música, exposição e venda de artesanato, além de novidades como aulas de Tupi-Guarani e trilhas guiadas.
-                </p>
+                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
+                <p class="text-white leading-relaxed descricaoBloco"></p>
             </div>
         </div>
     </section>

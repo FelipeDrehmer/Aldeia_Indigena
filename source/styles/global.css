@@ -49,6 +49,17 @@ nav {
     background-color: #1C382480;
 }
 
+.clip-diagonal-quadrado {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #1C382480;
+    border-radius: 0.75rem;
+    padding: 1.5rem; /* espaço interno */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .animated-underline::after {
     content: '';
