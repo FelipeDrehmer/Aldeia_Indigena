@@ -9,22 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="scroll-smooth">
-    <section class="relative w-full h-screen flex flex-col overflow-hidden bg-black heroSection">
-        <div class="hidden lg:flex absolute left-0 top-0 h-full w-[50%] z-10 items-center clip-diagonal">
-            <div class="px-10 py-16 max-w-lg">
-                <h2 class="text-5xl font-extrabold tracking-widest text-orange-400 mb-1">SEMANA</h2>
-                <h2 class="text-5xl font-extrabold tracking-widest text-white mb-6">CULTURAL</h2>
-            </div>
-        </div>
-        <div class="lg:hidden relative flex justify-center items-center h-full z-10">
-            <div class="clip-diagonal-quadrado flex flex-col justify-center items-center p-6">
-                <h2 class="text-3xl font-extrabold tracking-widest text-orange-400 mb-1">SEMANA</h2>
-                <h2 class="text-3xl font-extrabold tracking-widest text-white">CULTURAL</h2>
-            </div>
-        </div>
-        <nav class="w-full flex items-center justify-between px-8 py-6 absolute top-0 left-0 z-20">
+    <div class="min-h-screen w-full bg-[#996c3b] flex flex-col">
+        <!--Nav Bar-->
+        <div class="w-full flex items-center justify-between px-8 py-4 z-50">
             <div class="flex items-center gap-4">
-                <img src="../../assets/images/logo_image.png" alt="Logo Juruá" class="h-10 w-auto"/>
+                <img src="../../assets/images/img_Logo.svg" alt="Logo Juruá" class="h-10 w-auto"/>
                 <span class="text-3xl font-bold text-white tracking-wide">JURUÁ</span>
             </div>
             <!-- Menu Desktop -->
@@ -33,7 +22,7 @@
                 <li><a href="semana-cultural.html" class="animated-underline text-white text-lg font-light transition-all relative">SEMANA CULTURAL</a></li>
                 <li><a href="/source/pages/guarani-page/o-guarani.html" class="animated-underline text-white text-lg font-light transition-all relative">O GUARANI</a></li>
                 <li><a href="/source/pages/galeria-page/galeria.html" class="animated-underline text-white text-lg font-light transition-all relative">GALERIA</a></li>
-                <li><a href="/source/pages/dicionario-page/dicionario.html" class="animated-underline text-white text-lg font-light transition-all relative">DICIONARIO</a></li>
+                <li><a href="/source/pages/dicionario-page/dicionario.html" class="animated-underline text-white text-lg font-light transition-all relative">DICIONARIO</a></li> 
             </ul>
             <!-- Botão Mobile (Hamburguer) -->
             <button id="menuToggle" aria-label="Abrir Menu" class="lg:hidden flex flex-col gap-1 focus:outline-none z-40 relative">
@@ -41,16 +30,31 @@
                 <span class="w-6 h-[2px] bg-white transition-all origin-center"></span>
                 <span class="w-6 h-[2px] bg-white transition-all origin-center"></span>
             </button>
-        </nav>
-        <!-- Menu Mobile -->
-        <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-[#742E05]/90 backdrop-blur-sm z-30 flex flex-col items-center gap-8 pt-24 text-white text-2xl font-light transform translate-x-full transition-transform duration-300 ease-in-out">
-            <a href="/source/pages/home-page/home.html" class="text-white text-lg font-light transition-all relative">HOME</a>
-            <a href="semana-cultural.html" class="text-white text-lg font-light transition-all relative">SEMANA CULTURAL</a>
-            <a href="/source/pages/guarani-page/o-guarani.html" class="text-white text-lg font-light transition-all relative">O GUARANI</a>
-            <a href="/source/pages/galeria-page/galeria.html" class="text-white text-lg font-light transition-all relative">GALERIA</a>
-            <a href="/source/pages/dicionario-page/dicionario.html" class="text-white text-lg font-light transition-all relative">DICIONARIO</a>
         </div>
-    </section>
+        <!-- Seção principal  -->
+        <section class="h-[90vh] mx-6 lg:mx-6 flex flex-col overflow-hidden heroSection rounded-lg static">
+            <div class="hidden lg:flex absolute left-0 top-0 h-full w-[50%] z-10 items-center">
+                <div class="px-10 py-16 bg-[#1c3d16]/70 rounded-r-xl absolute left-0">
+                    <h2 class="text-8xl font-extrabold tracking-widest text-orange-400 mb-1">SEMANA</h2>
+                    <h2 class="text-8xl font-extrabold tracking-widest text-white mb-6">CULTURAL</h2>
+                </div>
+            </div>
+            <div class="lg:hidden relative flex justify-center items-center h-full z-10">
+                <div class="clip-diagonal-quadrado flex flex-col justify-center items-center p-6">
+                    <h2 class="text-3xl font-extrabold tracking-widest text-orange-400 mb-1">SEMANA</h2>
+                    <h2 class="text-3xl font-extrabold tracking-widest text-white">CULTURAL</h2>
+                </div>
+            </div>
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-[#742E05]/90 backdrop-blur-sm z-30 flex flex-col items-center gap-8 pt-24 text-white text-2xl font-light transform translate-x-full transition-transform duration-300 ease-in-out">
+                <a href="/source/pages/home-page/home.html" class="text-white text-lg font-light transition-all relative">HOME</a>
+                <a href="semana-cultural.html" class="text-white text-lg font-light transition-all relative">SEMANA CULTURAL</a>
+                <a href="/source/pages/guarani-page/o-guarani.html" class="text-white text-lg font-light transition-all relative">O GUARANI</a>
+                <a href="/source/pages/galeria-page/galeria.html" class="text-white text-lg font-light transition-all relative">GALERIA</a>
+                <a href="/source/pages/dicionario-page/dicionario.html" class="text-white text-lg font-light transition-all relative">DICIONARIO</a>
+            </div>
+        </section>
+    </div>
 
     <section id="eventoPrincipal" class="py-20 lg:px-6">
         <h2 id="tituloGeral" class="font-extrabold tracking-widest text-orange-400 mb-10 text-3xl lg:text-5xl text-center"></h2>

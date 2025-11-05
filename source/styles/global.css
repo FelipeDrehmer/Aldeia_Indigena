@@ -39,19 +39,13 @@ nav {
     background-image: url('../assets/images/hero_Image.png');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
     position: relative;
 }
 
 /* Fundo verde escuro */
-.clip-diagonal {
-    clip-path: polygon(0 0, 30% 0, 80% 100%, 0% 100%);
-    background-color: #1C382480;
-}
-
 .clip-diagonal-quadrado {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #1C382480;
+    background-color: #1c3d1699;
     border-radius: 0.75rem;
     padding: 1.5rem; /* espaço interno */
     display: inline-flex;
