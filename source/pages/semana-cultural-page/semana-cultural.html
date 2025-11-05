@@ -56,7 +56,7 @@
         </section>
     </div>
 
-    <section id="eventoPrincipal" class="py-20 lg:px-6">
+    <section id="eventoPrincipal" class="py-10 lg:px-6">
         <h2 id="tituloGeral" class="font-extrabold tracking-widest text-orange-400 mb-10 text-3xl lg:text-5xl text-center"></h2>
         <div class="max-w-[90%] lg:max-w-[70%] mx-auto flex flex-col lg:flex-row gap-10 items-center">  
             <div class="flex-1">
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="flex-1 flex flex-col items-center justify-center text-black gap-16">
-                <ul id="descricaoGeral" class="list-disc pl-5 text-lg leading-relaxed font-thin"></ul>
+                <div id="descricaoGeral" class="grid grid-cols-2 gap-4 w-full"></div>
                 <button class="bg-[#742E05] text-white px-6 py-4 rounded-md w-[250px] hover:bg-orange-700 transition">
                     INSCREVER-SE
                 </button>
@@ -79,63 +79,7 @@
         </div>
     </section>
 
-    <hr class="w-4/5 border-4 border-[#742E05] rounded-full mx-auto my-10">
-
-    <section class="py-20 blocos blocoEsquerda">
-        <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row gap-8 items-center">      
-
-            <div class="flex-1 overflow-hidden">
-                <img id="imagemE" src="" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out imgBloco">
-            </div>
-            <div class="flex-1 bg-[#D6C0A4] p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
-                <p class="text-white leading-relaxed descricaoBloco"></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-11 blocos blocoDireita">
-        <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row-reverse gap-8 items-center">
-            <!-- Imagem direita -->
-            <div class="flex-1 overflow-hidden">
-                <img id="imagemD" src="" alt="Imagem edição 2024" class="w-full h-full object-cover rounded-lg opacity-0 translate-x-20 transition-all duration-700 ease-out imgBloco">
-            </div>
-            <!-- Texto esquerda -->
-            <div class="flex-1 bg-[#1C3824]/80 p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
-                <p class="text-white leading-relaxed descricaoBloco"></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-11 blocos blocoEsquerda">
-        <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row gap-8 items-center">
-            
-            <!-- Imagem esquerda -->
-            <div class="flex-1 overflow-hidden">
-                <img id="imagemE" src="" alt="Imagem edição 2025" class="w-full h-full object-cover rounded-lg opacity-0 -translate-x-20 transition-all duration-700 ease-out imgBloco">
-            </div>
-            <!-- Texto direita -->
-            <div class="flex-1 bg-[#D6C0A4] p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
-                <p class="text-white leading-relaxed descricaoBloco"></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-11 blocos blocoDireita">
-        <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row-reverse gap-8 items-center">
-            <!-- Imagem direita -->
-            <div class="flex-1 overflow-hidden">
-                <img id="imagemD" src="" alt="Imagem edição 2024" class="w-full h-full object-cover rounded-lg opacity-0 translate-x-20 transition-all duration-700 ease-out imgBloco">
-            </div>
-            <!-- Texto esquerda -->
-            <div class="flex-1 bg-[#1C3824]/80 p-8 rounded-lg">
-                <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco"></h2>
-                <p class="text-white leading-relaxed descricaoBloco"></p>
-            </div>
-        </div>
-    </section>
+    <div id="container-blocos" class="bg-[#D6C0A4] mt-20"></div>
     
     <script src="../../scripts/main.js"></script>
     <script src="./semana-cultural.js"></script>

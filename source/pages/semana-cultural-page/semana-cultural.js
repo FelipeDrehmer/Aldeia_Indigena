@@ -27,32 +27,60 @@ async function montarPagina(resposta) {
             tituloGeral.textContent = resposta.tituloGeral;
         }
 
-        const descricaoTopico = document.querySelector("#descricaoGeral");
-        if (descricaoTopico && resposta.descricaoGeral) {
-            descricaoTopico.innerHTML = "";
-            resposta.descricaoGeral.forEach((texto) => {
-                const itemTopico = document.createElement("li");
-                itemTopico.textContent = texto;
-                itemTopico.classList.add("text-xl", "text-black", "mb-2", "leading-relaxed", "lg:text-3xl");
-                descricaoTopico.appendChild(itemTopico);
+        const descricaoContainer = document.querySelector("#descricaoGeral");
+        if (descricaoContainer && resposta.descricaoGeral) {
+            descricaoContainer.innerHTML = "";
+
+            resposta.descricaoGeral.forEach((texto, index) => {
+                const card = document.createElement("div");
+                card.textContent = texto;
+                card.classList.add(
+                    "bg-[#1C3824]",
+                    "text-white",
+                    "rounded-lg",
+                    "shadow-md",
+                    "p-6",
+                    "text-center",
+                    "text-lg",
+                    "transition",
+                    "hover:shadow-xl"
+                );
+
+                // Faz o último item ocupar toda a linha (2 colunas)
+                if (index === resposta.descricaoGeral.length - 1) {
+                    card.classList.add("col-span-2");
+                }
+
+                descricaoContainer.appendChild(card);
             });
         }
 
-        const blocosDOM = document.querySelectorAll(".blocos");
-        blocosDOM.forEach((secao, index) => {
-            const blocoDados = resposta.blocos[index];
-            if (!blocoDados) return;
+        const container = document.querySelector("#container-blocos");
 
-            const titulo = secao.querySelector(".tituloBloco");
-            if (titulo) titulo.textContent = blocoDados.titulo;
+        resposta.blocos.forEach((bloco, index) => {
+            const isDireita = index % 2 !== 0;
+            const bgColor = isDireita ? "#1C3824" : "#996c3b";
 
-            const descricao = secao.querySelector(".descricaoBloco");
-            if (descricao) descricao.textContent = blocoDados.descricao;
+            const html = `
+                <section id="blocos" class="pt-4 pb-4 ${isDireita ? "blocoDireita" : "blocoEsquerda"}">
+                    <div class="max-w-[75%] mx-auto flex flex-col lg:flex-row ${isDireita ? "lg:flex-row-reverse" : ""} items-center">      
 
-            const img = secao.querySelector(".imgBloco");
-            if (img && blocoDados.url) {
-                img.src = blocoDados.url;
-            }
+                        <div class="flex-1 bg-[${bgColor}] p-6 rounded-lg overflow-hidden">
+                            <div class="w-full h-full overflow-hidden rounded-md">
+                                <img src="${bloco.url || ""}" alt="Imagem ${bloco.titulo || ""}" 
+                                    class="w-full h-full object-cover rounded-md opacity-0 ${isDireita ? "translate-x-20" : "-translate-x-20"} transition-all duration-700 ease-out imgBloco">
+                            </div>
+                        </div>
+
+                        <div class="flex-1 bg-[${bgColor}] p-8 rounded-lg lg:ml-[-6rem] lg:mr-[-6rem] z-10">
+                            <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4 tituloBloco">${bloco.titulo || ""}</h2>
+                            <p class="text-white leading-relaxed descricaoBloco">${bloco.descricao || ""}</p>
+                        </div>
+                    </div>
+                </section>
+            `;
+
+            container.insertAdjacentHTML("beforeend", html);
         });
 
         const imagens = document.querySelectorAll(".imgBloco");
