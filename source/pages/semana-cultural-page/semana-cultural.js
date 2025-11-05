@@ -46,9 +46,8 @@ async function montarPagina(resposta) {
                     "hover:shadow-xl"
                 );
 
-                // Faz o último item ocupar toda a linha (2 colunas)
                 if (index === resposta.descricaoGeral.length - 1) {
-                    card.classList.add("col-span-2");
+                    card.classList.add("sm:col-span-2"); // só ocupa 2 colunas em telas maiores
                 }
 
                 descricaoContainer.appendChild(card);
