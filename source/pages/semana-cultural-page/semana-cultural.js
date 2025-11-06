@@ -43,12 +43,11 @@ async function montarPagina(resposta) {
                     "text-center",
                     "text-lg",
                     "transition",
-                    "hover:shadow-xl"
+                    "hover:shadow-xl",
+                    "flex",
+                    "items-center",
+                    "justify-center"
                 );
-
-                if (index === resposta.descricaoGeral.length - 1) {
-                    card.classList.add("sm:col-span-2"); // só ocupa 2 colunas em telas maiores
-                }
 
                 descricaoContainer.appendChild(card);
             });
@@ -94,7 +93,7 @@ async function montarPagina(resposta) {
                     observer.unobserve(img); 
                 }
             });
-        }, { threshold: 0.3 }); 
+        }, { threshold: 0.1 }); 
 
         imagens.forEach(img => observer.observe(img));
 
