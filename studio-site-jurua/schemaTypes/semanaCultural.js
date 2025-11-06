@@ -13,15 +13,44 @@ export const semanaCultural = defineType({
     }),
     defineField({
       name: 'descricaoGeral',
-      title: 'Descrição Geral (Tópicos)',
-      type: 'array',
-      of: [
-        {
-          type: 'string',
-          title: 'Tópico'
-        }
-      ],
-      validation: (rule) => rule.min(1).max(5),
+      title: 'Descrição Geral',
+      type: 'text',
+      rows: 4,
+      validation: (rule) => rule.required().min(10),
+    }),
+    defineField({
+      name: 'localEvento',
+      title: 'Local do Evento',
+      type: 'string',
+      validation: (rule) => rule.required().min(3),
+    }),
+    defineField({
+      name: 'dataInicio',
+      title: 'Data de Início',
+      type: 'date',
+      validation: (rule) => rule.required(),
+      options: {
+        dateFormat: 'DD/MM/YYYY',
+      },
+    }),
+    defineField({
+      name: 'dataFinal',
+      title: 'Data de Término',
+      type: 'date',
+      validation: (rule) => rule.required(),
+      options: {
+        dateFormat: 'DD/MM/YYYY',
+      },
+    }),
+    defineField({
+      name: 'horarioInicio',
+      title: 'Horário de Início',
+      type: 'string',
+      validation: (rule) =>
+        rule
+          .required()
+          .regex(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/, { name: 'HH:mm' }),
+      description: 'Informe no formato HH:mm (ex: 08:30)',
     }),
     defineField({
       name: 'blocos',
