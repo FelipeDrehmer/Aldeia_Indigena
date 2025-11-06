@@ -89,7 +89,6 @@ async function montarPagina(resposta) {
 
         const container = document.querySelector("#container-blocos");
         if (container && resposta.blocos?.length) {
-            container.innerHTML = "";
 
             resposta.blocos.forEach((bloco, index) => {
                 const isDireita = index % 2 !== 0;
