@@ -45,7 +45,7 @@ async function montarPagina(resposta) {
 
         const criarCard = (icone, label, valor) => {
             const card = document.createElement("div");
-            card.classList.add("flex", "items-center", "gap-3", "bg-[#45532D]", "rounded-xl", "p-4", "text-white");
+            card.classList.add("flex", "items-center", "gap-3", "bg-[#45532D]", "rounded-xl", "p-4", "text-white", "shadow-xl", "shadow-[#172914]");
 
             const iconEl = document.createElement("i");
             iconEl.className = `bx ${icone} text-3xl`;
