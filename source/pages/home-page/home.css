@@ -97,18 +97,8 @@
         rgb(214, 192, 164);
 }
 
-/* .teste{
-    margin-top: 20%;
-    background-color: white;
-    width: 100%;
-    height: 50vh;
-}
-.teste2{
-    background-color: #996c3b;
-    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
-
-} */
  .teste{
-    writing-mode: vertical-rl;
-    padding-block: 100%,;
+    /* padding-left: 60%; */
+    margin-left: 60% ;
+    margin-top: -22vh;
  }
