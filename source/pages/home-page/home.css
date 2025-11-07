@@ -76,7 +76,7 @@
 .texto-guarani h3{
     font-weight: 100;
     color: white;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .sobre_oguarani{
@@ -99,6 +99,15 @@
 
  .teste{
     /* padding-left: 60%; */
-    margin-left: 60% ;
-    margin-top: -22vh;
+    margin-left: 55% ;
+    margin-top: -18.6vh;
  }
+ @media (min-width: 1380px){
+    .teste{margin-left: 58%;}
+}
+.rodape{
+    background-color: #49604f;
+}
+.rodape_{
+    border-bottom: ;
+}
