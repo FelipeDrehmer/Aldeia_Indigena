@@ -111,3 +111,8 @@
         linear-gradient(rgba(45, 90, 58, 0.9),rgb(28, 56, 36, 0.9), rgba(9, 19, 12, 0.9)),
         url(../../assets/images/fundoSecao3.png);
 }
+.o-guarani{
+    background: 
+        linear-gradient( #ccc1a3);
+        /* url(../../assets/images/fundoSecao3.png);    */
+}
