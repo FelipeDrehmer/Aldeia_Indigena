@@ -1,5 +1,6 @@
 .body, html{
     overflow-x: hidden;
+    width: 100%;
 }
 .bannerfront{
     display: flex;
@@ -90,7 +91,6 @@
 }
 .bg_bannerb{
     height: 100%;
-    background-color: rgb(214, 192, 164);
     background: 
         linear-gradient(rgba(128, 71, 11, 0.9), rgba(128, 71, 11, 0.9)),
         url("../../assets/images/fundoSecao3.png"),
@@ -105,6 +105,9 @@
  @media (min-width: 1380px){
     .teste{margin-left: 58%;}
 }
-.rodape{
-    background-color: #49604f;
+
+.footer{
+    background: 
+        linear-gradient(rgba(45, 90, 58, 0.9),rgb(28, 56, 36, 0.9), rgba(9, 19, 12, 0.9)),
+        url(../../assets/images/fundoSecao3.png);
 }
