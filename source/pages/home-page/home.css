@@ -97,14 +97,14 @@
         rgb(214, 192, 164);
 }
 
- .teste{
-    /* padding-left: 60%; */
+ /* .teste{
+    /* padding-left: 60%; 
     margin-left: 55% ;
     margin-top: -18.6vh;
  }
  @media (min-width: 1380px){
     .teste{margin-left: 58%;}
-}
+}*/
 
 .footer{
     background: 
@@ -113,6 +113,6 @@
 }
 .o-guarani{
     background: 
-        linear-gradient( #ccc1a3);
-        /* url(../../assets/images/fundoSecao3.png);    */
+        linear-gradient( rgba(224, 203, 173, 0.9)),
+        url(../../assets/images/Textura14.png);   
 }
