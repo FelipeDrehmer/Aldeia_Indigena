@@ -99,10 +99,10 @@
 
  .indi{
     /* padding-left: 60%; */
-    margin-left: 55% ;
+    margin-left: 62% ;
  }
  @media (min-width: 1380px){
-    .indi{margin-left: 58%;}
+    .indi{margin-left: 63%;}
 }
 
 .footer{
