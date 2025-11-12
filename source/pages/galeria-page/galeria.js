@@ -17,7 +17,6 @@ async function getData() {
     }
 }
 
-// Função para converter URLs do YouTube em embed
 function getYouTubeEmbed(url) {
     const regex = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
     const match = url.match(regex);
@@ -29,7 +28,6 @@ function getYouTubeEmbed(url) {
 
 async function montarPagina(resposta) {
     try {
-        // Título e descrição geral
         const tituloGeral = document.querySelector('#tituloGeral');
         if (tituloGeral && resposta.tituloGeral) tituloGeral.textContent = resposta.tituloGeral;
 
@@ -42,38 +40,32 @@ async function montarPagina(resposta) {
             imagemGeral.loading = "lazy";
         }
 
-        // Cards
         const cardsSecao = document.querySelector('#balaoCards');
         if (cardsSecao && Array.isArray(resposta.cards)) {
-            cardsSecao.innerHTML = ''; // limpa container
 
             resposta.cards.forEach((card, index) => {
                 const cor = index % 2 === 0 ? '#8B572A' : '#1c3d16';
                 const divCard = document.createElement('div');
-                divCard.className = 'w-[270px] rounded-2xl overflow-hidden shadow-lg';
+                divCard.className = 'w-[330px] rounded-2xl overflow-hidden shadow-lg';
                 divCard.style.backgroundColor = cor;
 
                 divCard.innerHTML = `
                     <img src="${card.foto}" alt="Imagem do card" loading="lazy" class="w-full h-[150px] object-cover" />
                     <div class="p-4">
-                        <p class="text-white text-sm leading-relaxed">${card.descricao || ''}</p>
+                        <p class="text-white text-lg leading-relaxed">${card.descricao || ''}</p>
                     </div>
                 `;
                 cardsSecao.appendChild(divCard);
             });
         }
 
-        // Grupos de fotos/vídeos
         const container = document.querySelector("#container-blocos");
         if (container && Array.isArray(resposta.gruposDeFotos)) {
-            container.innerHTML = ''; // limpa container
 
             resposta.gruposDeFotos.forEach((grupo) => {
                 const section = document.createElement("section");
                 section.className = "py-4 px-4 mb-8 sm:px-6 sm:py-6 lg:px-10 lg:py-10 flex flex-col";
                 section.innerHTML = `
-                    <h5 class="font-extrabold tracking-widest text-[#510006] text-2xl md:text-3xl lg:text-4xl">/Nos acompanhe</h5>
-                    <h2 class="font-extrabold tracking-widest text-[#750f0f] mb-10 text-3xl md:text-4xl lg:text-7xl">Redes Sociais</h2>
                 `;
 
                 const grid = document.createElement("div");
@@ -121,8 +113,12 @@ async function montarPagina(resposta) {
                 descricao.className = "max-w-6xl text-xl text-center text-black leading-relaxed mx-auto";
                 descricao.innerHTML = `<p>${grupo.descricao || ""}</p>`;
 
+                const separadorSection = document.createElement('hr');
+                separadorSection.className = 'my-4 h-0.5 bg-[#8B572A] border-0'
+
                 section.appendChild(grid);
                 section.appendChild(descricao);
+                section.appendChild(separadorSection);
                 container.appendChild(section);
             });
         }
