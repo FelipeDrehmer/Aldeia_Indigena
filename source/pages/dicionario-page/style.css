@@ -1,0 +1,353 @@
+/* ==========================================================
+   VARIÁVEIS DE CORES E FONTES
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --bege: #F5E4CA;
+  --marrom: #742E05;
+  --verde-escuro: #162C1C;
+  --branco: #ffffff;
+  --texto-escuro: #1e1e1e;
+  --texto-titulo: #E2883A;
+  --fonte-principal: "Inter", sans-serif;
+}
+   
+
+:root {
+  --bege: #F5E4CA;
+  --marrom: #742E05;
+  --verde-escuro: #162C1C;
+  --branco: #ffffff;
+  --texto-escuro: #1e1e1e;
+
+  /* Fonte base */
+  --fonte-principal: "Inter", sans-serif;
+
+}
+
+
+/* ==========================================================
+   ESTILO GLOBAL
+   ========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  color: var(--texto-escuro);
+  background-color: var(--verde-escuro);
+}
+
+
+/* ==========================================================
+   CABEÇALHO
+   ========================================================== */
+.topo {
+  width: 100%;
+  background-color: var(--verde-escuro);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* joga o menu pra direita */
+  padding: 1.5% 5%;
+  position: relative;
+  z-index: 10; /* mantém o topo acima da imagem */
+  font-family: Inter;
+}
+
+.topo-logo {
+  width: 90px; /* ajusta o tamanho da logo */
+  position: absolute;
+  bottom: -25px; /* faz a logo descer e ultrapassar a faixa verde */
+  left: 40px;
+  z-index: 20; /* garante que fique acima da imagem */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu a.ativo {
+  border-bottom: 2px solid var(--branco);
+}
+
+/* ==========================================================
+   SEÇÃO CAPA (IMAGEM DO MENINO)
+   ========================================================== */
+.capa {
+  width: 100vw;
+  background-image: url("assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 70vh; 
+  margin-left: 0;
+  object-fit: cover;
+}
+
+body { /* deixar a imagem menino certa no centro sem ficar com partes verdes aaprecendo  */
+  margin: 0;
+  padding: 0;
+  background-color: var(--verde);  /* cor de fundo clara que já usa no site */
+  overflow-x: hidden;  /* evita barras laterais e espaços extras */
+}
+
+* {
+  box-sizing: border-box; /* deixar a imagem menino certa no centro sem ficar com partes verdes aaprecendo  */
+}
+
+
+.capa-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.titulo-principal {
+  color: var(--texto-titulo);
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0 0 5% 8%;
+  line-height: 0.9;
+}
+
+.titulo-principal span {
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: var(--branco);
+}
+
+
+/* ==========================================================
+   SEÇÃO PRINCIPAL (FUNDO BEGE)
+   ========================================================== */
+.fundo-bege {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--bege);
+  padding: 2% 0;
+  justify-content: center;
+}
+
+/* Caixa marrom central */
+.caixa-marrom {
+  display: grid;
+  background-color: var(--marrom);
+  width: 80%;
+  border-radius: 1rem;
+  padding: 3%;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.3);
+  margin-top: -10vh; /* faz a caixa subir um pouco sobre a imagem */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4%; /* bgl para mexer para aumentar a quantidade de palavras no site sem fuder oq esta em baixo */
+}
+
+/* Tabela de palavras */
+.tabela-palavras {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.tabela-palavras th {
+  transform: translateY(-18px); /* sobe px, ajuste o valor como quiser */
+  text-align: left;
+  padding: 2% 3%; 
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 0.1rem solid rgba(255,255,255,0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabela-palavras td {
+  padding: 1.5% 3%;
+  font-size: 0.95rem;
+  border-bottom: 0.05rem solid rgba(255,255,255,0.1);
+}
+
+/* Seção geral do dicionário */
+.secao-dicionario {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;   /* centraliza verticalmente (caso tenha altura definida) */
+  flex-direction: column;
+  padding: 60px 0;
+  background-color: var(--bege); /* cor de fundo igual à sua seção */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Caixinha do título */
+.caixa-titulo {
+  background-color: var(--marrom);
+  color: var(--branco);
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 0.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave */
+  transition: all 0.3s ease; /* animação suave no hover */
+  cursor: default;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+}
+
+/* Efeito quando o mouse passa por cima */
+.caixa-titulo:hover {
+  transform: scale(1.05); /* aumenta levemente */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* sombra mais forte */
+  background-color: #5e2303; /* tom um pouco mais escuro do marrom */
+}
+
+.texto-nota {
+  background-color: var(--texto-escuro);
+  color: var(--marrom);
+  padding: 1% 2%;
+  border-radius: 0.5rem;
+  font-weight: 700px;
+
+}
+
+.botao-acao {
+  background-color: var(--bege);
+  color: var(--marrom);
+  border: none;
+  padding: 1% 3%;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.disc p {
+  display: flex;
+  flex-direction: column;
+  gap: 2%; /* espaço entre as divs */
+  margin-top: 4%;
+  font-family: Inter;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 105%;
+}
+
+/* ==========================================================
+   RODAPÉ
+   ========================================================== */
+.rodape {
+  width: 100%;
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  padding: 3% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rodape-esquerda {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.logo-rodape {
+  width: 80px;
+}
+
+.links-rodape {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-rodape a {
+  color: var(--branco);
+  text-decoration: none;
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.rodape-direita {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.semana-texto {
+  text-align: right;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.botao-inscrever {
+  background-color: var(--branco);
+  color: var(--verde-escuro);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE (ajustes em telas pequenas)
+   ========================================================== */
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 1rem;
+  }
+
+  .titulo-principal {
+    font-size: 2rem;
+  }
+
+  .caixa-marrom {
+    width: 90%;
+    margin-top: -8vh;
+  }
+
+  .rodape {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
