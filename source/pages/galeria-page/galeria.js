@@ -77,7 +77,6 @@ async function montarPagina(resposta) {
                     const blocoMidia = document.createElement("div");
                     blocoMidia.className = "bg-[#D6BFA3] aspect-square w-full max-w-[25rem] rounded-lg flex items-center justify-center overflow-hidden";
 
-                    // Imagem
                     if (midia._type === "image" && midia.imageUrl) {
                         const img = document.createElement("img");
                         img.src = midia.imageUrl;
@@ -86,7 +85,6 @@ async function montarPagina(resposta) {
                         img.className = "object-cover w-full h-full";
                         blocoMidia.appendChild(img);
 
-                    // Vídeo local
                     } else if (midia._type === "file" && midia.videoUrl) {
                         const video = document.createElement("video");
                         video.src = midia.videoUrl;
@@ -94,7 +92,6 @@ async function montarPagina(resposta) {
                         video.className = "object-cover w-full h-full";
                         blocoMidia.appendChild(video);
 
-                    // Vídeo YouTube externo
                     } else if (midia.externalUrl) {
                         const embedUrl = getYouTubeEmbed(midia.externalUrl) || midia.externalUrl;
                         const iframe = document.createElement("iframe");
@@ -114,7 +111,7 @@ async function montarPagina(resposta) {
                 descricao.innerHTML = `<p>${grupo.descricao || ""}</p>`;
 
                 const separadorSection = document.createElement('hr');
-                separadorSection.className = 'my-4 h-0.5 bg-[#8B572A] border-0'
+                separadorSection.className = 'my-4 h-1 bg-[#8B572A] border-0 rounded mx-auto w-3/5';
 
                 section.appendChild(grid);
                 section.appendChild(descricao);
