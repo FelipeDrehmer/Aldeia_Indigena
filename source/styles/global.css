@@ -91,3 +91,121 @@ body::-webkit-scrollbar-thumb {
 #blocos + #blocos {
     margin-top: 1rem; /* espaço entre blocos */
 }
+
+.body, html{
+    overflow-x: hidden;
+    width: 100%;
+}
+.bannerfront{
+    display: flex;
+    width: 106%;
+    padding: 1%;
+    margin-left: -5%;
+
+    background-color: #49604f;
+    justify-content: center;
+    transform: rotate(5deg);
+    overflow-x: hidden;
+
+}
+.imgs-front{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+    margin-left: 14%;
+    margin-right: 15%;
+}
+.imgs-front img{
+    width: 45%;
+    border-radius: 5%;
+    overflow-x: hidden;
+}
+.bannerback{
+    display: flex;
+    width: 110%;
+    padding: 1%;
+    margin-left: -5%;
+
+    background-color: #996c3b;
+    justify-content: center;
+    transform: rotate(-7deg);
+    overflow-x: hidden;
+    clip-path: polygon(0 0, 98% 0, 95% 100%, 0% 100%);
+}
+.imgs-back{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+.imgs-back img{
+    width: 30%;
+    border-radius: 5%;
+    overflow-x: hidden;
+}
+
+#banner{
+    overflow-x: hidden;
+}
+
+.info{
+    clip-path: polygon(0% 10%, 100% 0%, 100% 140%, 0% 100%);
+    background: #D6C0A4;
+    padding: 0;
+}
+@media (max-width: 1080px){
+    .info{clip-path: none;}
+}
+.texto.guarani{
+    width: 10%;
+}
+.texto-guarani h1{
+    font-weight: 700;
+    color: white;
+}
+.texto-guarani h3{
+    font-weight: 100;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.sobre_oguarani{
+    display: flex;
+}
+.bg_bannerf{
+    height: 100%;
+    background: 
+        linear-gradient(rgba(28, 56, 36, 0.9), rgba(73, 96, 79, 0.9)),
+        url("../assets/images/fundoSecao3.png");
+}
+.bg_bannerb{
+    height: 100%;
+    background: 
+        linear-gradient(rgba(128, 71, 11, 0.9), rgba(128, 71, 11, 0.9)),
+        url("../assets/images/fundoSecao3.png"),
+        rgb(214, 192, 164);
+}
+
+ .indi{
+    /* padding-left: 60%; */
+    margin-left: 62% ;
+ }
+ @media (min-width: 1380px){
+    .indi{margin-left: 63%;}
+}
+
+.footer{
+    background: 
+        linear-gradient(rgba(45, 90, 58, 0.9),rgb(28, 56, 36, 0.9), rgba(9, 19, 12, 0.9)),
+        url(../assets/images/fundoSecao3.png);
+}
+.o-guarani{
+    background: 
+        linear-gradient( rgb(224, 203, 173, 0.9)),
+        url(../assets/images/Textura14.png);
+}
