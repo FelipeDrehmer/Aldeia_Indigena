@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../home-page/home.css">
     <link rel="icon" type="image/png" href="../../assets/images/img_Logo.svg">
+    <script src="home.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -91,9 +92,23 @@
             <a href="/source/pages/semana-cultural-page/semana-cultural.html?scroll=eventoPrincipal" class="bg-[#742E05] hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-md transition-all shadow-md">SAIBA MAIS</a>
         </div>
     </section>
+    <section class="w-[100%] shadow-2xl lg:hidden ">
+        <div id="divs" class="h-5 sm:h-10 w-[100%]"></div>
+        <div id="carrossel" class=" p-4 overflow-hidden justify-center">
+            <div id="imgs" class="flex gap-[12%] items-center ">
+                <img src="../../assets/images/fila.png" alt="">
+                <img src="../../assets/images/quatro.png" alt="">
+                <img src="../../assets/images/grupo.png" alt="">
+                <img src="../../assets/images/dupla.png" alt="">
+                <img src="../../assets/images/publico.png" alt="">
+            </div>
+        </div>
+        <div id="divs" class="lg:hidden h-5 sm:h-10 w-[100%]"></div>
+    </section>
+    
 
 
-    <section id="banners" class="py-10">
+    <section id="banners" class="hidden lg:block py-10">
         <div class="banner-wrapper">
             <div class="bannerfront bg_bannerf">
                 <div class="imgs-front">
@@ -103,7 +118,7 @@
             </div>
         </div>
         <div class="banner-wrapper">
-            <div class="bannerback bgb bg_bannerb ]">
+            <div class="bannerback bgb bg_bannerb">
                 <div class="imgs-back">
                     <img src="../../assets/images/grupo.png" alt="">
                     <img src="../../assets/images/dupla.png" alt="">
@@ -142,16 +157,22 @@
                 </div> 
             </div>
     </section>
-    <section>
-        <div class="relative">
-            <div class="text-5xl text-right mr-4">
-                <h1 class="tracking-widest"><span class="font-extrabold text-orange-400 font-extrabold text-6xl ml-4">A</span> <span class="font-extrabold font-extrabold text-[#742E05]">COMUNIDADE</span></h1>
+    <!-- <section>
+        <div class="">
+            <div class="sm:text-3xl md:text-4xl lg:text-5xl text-right mr-4">
+                <h1 class="tracking-widest font-extrabold">
+                    <span class=" text-orange-400 sm:text-3xl md:text-4xl lg:text-6xl ml-4">A</span> 
+                    <span class=" text-[#742E05]">COMUNIDADE</span></h1>
             </div>
-            <div class="flex items-center gap-3 my-[2%] items-center justify-center">
-                <div class="w-[30%] "><img src="../../assets/images/fofa.png" alt="" class="rounded-3xl"></div>
-                <h3 class="w-[50%] bg-[#80470B] rounded-2xl text-2xl text-white p-3 shadow-2xl outline outline-offset-2 outline-[#80470B] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididnsequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum. “ -Indio</h3>
+            <div class="flex items-center justify-center bg-orange-700 my-4 items-center  mx-4 sm:mx-[2%] max-sm:outline outline-offset-2 outline-[#80470B] rounded-3xl h-[100%]">
+                <div class="">
+                    <img src="../../assets/images/fofa.png" alt="" class="rounded-t-3xl sm:rounded-3xl sm:w-[30%]">
+                </div>
+                <div>
+                    <h3 class="bg-[#80470B] font-medium max-sm:rounded-b-3xl md:text-2xl lg:text-3xl text-white p-3 shadow-2xl sm:outline outline-offset-2 outline-[#80470B] sm:rounded-3xl sm:w-[60%] min-[1200px]:w-[50%] xl:w-[40%]">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididnsequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum. “ -Indio</h3>
+                </div>
             </div>
-        </div>
+        </div> -->
 
     </section>
     <footer class="footer h-[50%]">
@@ -201,6 +222,6 @@
     </footer>
 
     <script src="/source/scripts/main.js"></script>
-    <script src="home.js"></script>
+    
 </body>
 </html>
