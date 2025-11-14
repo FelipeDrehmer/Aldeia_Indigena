@@ -29,6 +29,7 @@ body {
   color: #6e2e00;
   margin-bottom: 6%;
   text-decoration: underline 2px;
+  font-weight: 800;
 }
 
 .alma-viva h2 span {
@@ -68,7 +69,8 @@ body {
 }
 
 .alma-text p {
-  margin-bottom: 5%;  
+  margin-bottom: 5%;
+  font-size: 120%;
 }
 
 .lower-img {
@@ -77,8 +79,9 @@ body {
 }
 
 .alma-lower p {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-right: -20%;
+  font-size: 120%;
 }
 
 .btn {
@@ -102,9 +105,10 @@ body {
 
 /* ===== PRESENÇA ===== */
 .presenca h3 {
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   color: #742E05;
   text-decoration: underline 2px;
+  font-weight: 800;
 }
 
 .container h3 span {
@@ -155,71 +159,10 @@ body {
 }
 
 .texto p {
-  font-size: 105%;
+  font-size: 120%;
   color: #3c2b1d;
   text-align: center;
   margin-left: -30%;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  background-color: #1e3724;
-  color: #fff;
-  padding: 5% 0;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.footer-logo img {
-  height: 35px;
-  margin-bottom: 10px;
-}
-
-.footer-logo span {
-  font-weight: 700;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.socials a {
-  color: white;
-  font-size: 1.2rem;
-  margin-right: 10px;
-}
-
-.footer h4 {
-  margin-bottom: 15px;
-  font-size: 1rem;
-  color: #ffb54c;
-}
-
-.footer ul {
-  list-style: none;
-}
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.btn-dark {
-  background: #6e2e00;
-  color: #1e3724;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
 }
 
 /* ===== RESPONSIVIDADE ===== */
