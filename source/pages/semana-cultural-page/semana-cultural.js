@@ -111,7 +111,6 @@ async function montarPagina(resposta) {
                 container.insertAdjacentHTML("beforeend", html);
             });
 
-            // Animação ao entrar na tela
             const imagens = document.querySelectorAll(".imgBloco");
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -125,7 +124,6 @@ async function montarPagina(resposta) {
             imagens.forEach(img => observer.observe(img));
         }
 
-        // === Scroll automático via query param ===
         const params = new URLSearchParams(window.location.search);
         const alvo = params.get('scroll');
         if (alvo) {
