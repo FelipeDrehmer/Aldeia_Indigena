@@ -24,17 +24,16 @@ body {
   text-align: center;
 }
 
-.alma-viva h2 {
-  font-size: 350%;
-  color: #6e2e00;
-  margin-bottom: 6%;
-  text-decoration: underline 2px;
-  font-weight: 800;
+.container h2 {
+  text-align: left;
+  margin-left: -5%;
+  margin-bottom: 4%;
 }
 
-.alma-viva h2 span {
-  text-decoration: underline 2px;
-  color: #E2883A;
+.container h5 {
+  text-align: left;
+  margin-left: -5%;
+  margin-top: 2%;
 }
 
 .alma-grid {
@@ -104,16 +103,18 @@ body {
 }
 
 /* ===== PRESENÇA ===== */
-.presenca h3 {
+.presenca h2 {
   margin-bottom: 5%;
   color: #742E05;
-  text-decoration: underline 2px;
+  text-decoration: underline 4px;
   font-weight: 800;
+  text-align: center;
+  font-size: 300%;
 }
 
-.container h3 span {
+.presenca h2 span {
   color: #E2883A;
-  text-decoration: underline 2px;
+  text-decoration: underline 4px;
 }
 
 .presenca-grid img {
@@ -128,12 +129,6 @@ body {
   background-color: #f3dcb8;
   padding: 3% 0;
 }
-
-.presenca h3 {
-  text-align: center;
-  font-size: 200%;
-}
-
 
 .presenca-grid {
   display: flex;
