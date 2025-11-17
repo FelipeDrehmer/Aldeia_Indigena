@@ -72,6 +72,11 @@ body {
   font-size: 120%;
 }
 
+.alma-text hr {
+  margin-top: 10%;
+  width: 90%;
+}
+
 .lower-img {
   width: 100%;
   margin-top: 4%;
@@ -81,6 +86,12 @@ body {
   margin-top: 20%;
   margin-right: -20%;
   font-size: 120%;
+}
+
+.alma-lower hr {
+  width: 110%;
+  margin-left: 5%;
+
 }
 
 .btn {
@@ -158,6 +169,12 @@ body {
   color: #3c2b1d;
   text-align: center;
   margin-left: -30%;
+}
+
+.texto hr {
+  width: 100%;
+  margin-left: -14%;
+  margin-top: 10%;
 }
 
 /* ===== RESPONSIVIDADE ===== */
