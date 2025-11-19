@@ -39,12 +39,15 @@ async function montarPagina(resposta) {
 
         const h1 = document.createElement('span');
         h1.textContent = 'PALAVRA';
+        h1.classList.add('text-xs', 'sm:text-base', 'md:text-xl');
 
         const h2 = document.createElement('span');
         h2.textContent = 'TRADUÇÃO';
+        h2.classList.add('text-xs', 'sm:text-base', 'md:text-xl');
 
         const h3 = document.createElement('span');
         h3.textContent = 'SIGNIFICADO';
+        h3.classList.add('text-xs', 'sm:text-base', 'md:text-xl');
 
         header.append(h1, h2, h3);
 
@@ -63,12 +66,15 @@ async function montarPagina(resposta) {
 
             const col1 = document.createElement('span');
             col1.textContent = item.palavra;
+            col1.classList.add('text-base', 'sm:text-base', 'md:text-lg');
 
             const col2 = document.createElement('span');
             col2.textContent = item.traducao;
+            col2.classList.add('text-base', 'sm:text-base', 'md:text-lg');
 
             const col3 = document.createElement('span');
             col3.textContent = item.significado;
+            col3.classList.add('text-base', 'sm:text-base', 'md:text-lg');
 
             row.append(col1, col2, col3);
             container.appendChild(row);
