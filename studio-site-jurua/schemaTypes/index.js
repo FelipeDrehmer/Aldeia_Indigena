@@ -4,6 +4,7 @@ import { dicionario } from './dicionario'
 import { blocoImagem } from './objects/blocoSemanaCultural'
 import { cardGaleria } from './objects/cardGaleria'
 import { grupoFotos } from './objects/grupoFotos'
+import { home } from './home'
 
 export const schemaTypes = [
   semanaCultural,
@@ -12,4 +13,5 @@ export const schemaTypes = [
   blocoImagem,
   cardGaleria,
   grupoFotos,
+  home,
 ]
