@@ -129,11 +129,7 @@
     .indi{margin-left: 63%;}
 }
 
-.footer{
-    background: 
-        linear-gradient(rgba(45, 90, 58, 0.9),rgb(28, 56, 36, 0.9), rgba(9, 19, 12, 0.9)),
-        url(../../assets/images/fundoSecao3.png);
-}
+
 .o-guarani{
     background: 
         linear-gradient( rgb(224, 203, 173, 0.9)),

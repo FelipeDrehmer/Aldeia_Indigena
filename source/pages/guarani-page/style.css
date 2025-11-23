@@ -179,7 +179,7 @@ body {
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 1000px) {
-  .alma-grid, .alma-lower, .presenca-grid, .footer-grid {
+  .alma-grid, .alma-lower, .presenca-grid {
     grid-template-columns: 1fr;
   }
 
