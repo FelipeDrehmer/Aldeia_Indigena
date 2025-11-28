@@ -55,35 +55,35 @@
   </div>
 
   <!-- A Alma Viva da Floresta -->
-  <section class="py-8 text-center">
-    <div class="w-[90%] max-w-full mx-auto">
-      <h5 class="font-extrabold tracking-widest text-[#510006] text-2xl md:text-3xl lg:text-4xl text-left -ml-[5%] mt-[2%]">/Cultura</h5>
-      <h2 id="tituloGeral" class="font-extrabold tracking-widest text-[#750f0f] mb-[4%] text-3xl md:text-4xl lg:text-7xl text-left -ml-[5%]">Conheça a cultura guarani</h2>
+  <section class="py-8 sm:py-12 lg:py-16">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8">
+      <h5 class="font-extrabold tracking-widest text-[#510006] text-xl sm:text-2xl md:text-3xl lg:text-4xl text-left mb-2">/Cultura</h5>
+      <h2 id="tituloGeral" class="font-extrabold tracking-widest text-[#750f0f] mb-8 sm:mb-10 md:mb-12 text-2xl sm:text-3xl md:text-4xl lg:text-7xl text-left">Conheça a cultura guarani</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-[3%] mb-[10%] items-center">
-        <div class="w-full bg-[#EBD8B5] rounded-[3%] overflow-visible">
-          <img class="w-full mt-[5%]" src="grafismo.png" alt="Imagem Grafismo">
+      <!-- Primeiro Bloco: Imagem Esquerda, Texto Direita -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16 items-center">
+        <div class="w-full bg-[#EBD8B5] rounded-lg overflow-hidden p-3 sm:p-4 md:p-6">
+          <img class="w-full h-auto object-cover rounded-md" src="grafismo.png" alt="Imagem Grafismo">
         </div>
 
-        <div class="text-left">
-          <p class="mb-[5%] text-[120%]">Os grafismos Guarani são desenhos cheios de significados, representando a natureza, os espíritos e a vida
-            em harmonia. Cada traço é uma forma de preservar a cultura e contar histórias do povo Guarani.</p>
-          <a href="#" class="inline-block bg-[#7a2d00] text-white px-4 py-2 rounded-sm hover:bg-[#b91c1c]">Saiba mais sobre nós</a>
-          <hr class="my-4 h-1 bg-[#8B572A] border-0 rounded mx-auto w-3/5">
+        <div class="flex flex-col items-center justify-center text-center">
+          <p class="mb-6 text-xl leading-relaxed text-[#2b2b2b]">Os grafismos Guarani são desenhos cheios de significados, representando a natureza, os espíritos e a vida em harmonia. Cada traço é uma forma de preservar a cultura e contar histórias do povo Guarani.</p>
+          <a href="#" class="inline-block bg-[#7a2d00] text-white px-5 py-2 rounded-md hover:bg-[#b91c1c] transition-colors mb-6">Saiba mais sobre nós</a>
+          <hr class="h-1 bg-[#8B572A] border-0 rounded w-3/5">
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-[10%] md:mr-[15%] items-center">
-        <div>
-          <p class="mt-[20%] md:mt-0 mr-[-20%] text-[120%]">O povo Guarani possui uma cultura rica, espiritual e profundamente ligada à natureza. Para eles, o mundo é
-            sagrado e tudo o que existe, as florestas, os rios, os animais e o céu, têm um espírito e um significado.
-            Vivem de forma simples, buscando o “teko porã”, o bem viver, que representa a harmonia entre as pessoas, a
-            comunidade e o ambiente. A língua guarani é um dos pilares da sua identidade, transmitida de pais para filhos
-            junto com os cantos, danças, histórias e rituais.</p>
-            <hr class="my-4 h-1 bg-[#8B572A] border-0 rounded mx-auto w-3/5">
+      <!-- Segundo Bloco: Texto Esquerda Centralizado, Imagem Direita -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+        <div class="flex flex-col items-center justify-center text-center md:text-left order-2 md:order-1">
+          <p class="text-xl leading-relaxed text-[#2b2b2b] mb-6">O povo Guarani possui uma cultura rica, espiritual e profundamente ligada à natureza. Para eles, o mundo é sagrado e tudo o que existe, as florestas, os rios, os animais e o céu, têm um espírito e um significado. Vivem de forma simples, buscando o "teko porã", o bem viver, que representa a harmonia entre as pessoas, a comunidade e o ambiente. A língua guarani é um dos pilares da sua identidade, transmitida de pais para filhos junto com os cantos, danças, histórias e rituais.</p>
+          <hr class="h-1 bg-[#8B572A] border-0 rounded w-3/5">
         </div>
-        <div class="w-[120%] h-[105%] bg-[#EBD8B5] rounded-[3%] overflow-visible ml-[20%] md:ml-[20%]">
-          <img class="w-full mt-[4%]" src="guaranis.png" alt="Imagem Guaranis">
+
+        <div class="flex justify-center md:justify-end order-1 md:order-2">
+          <div class="w-full sm:max-w-sm md:max-w-md lg:max-w-lg bg-[#EBD8B5] rounded-lg overflow-hidden p-3 sm:p-4 md:p-6">
+            <img class="w-full h-auto object-cover rounded-md" src="guaranis.png" alt="Imagem Guaranis">
+          </div>
         </div>
       </div>
     </div>
@@ -92,9 +92,8 @@
   <!-- Presença Guarani na América do Sul -->
   <section class="bg-[#f3dcb8] py-[3%]">
     <div class="w-[90%] max-w-full mx-auto">
-      <h2 class="mb-[5%] text-[#742E05] font-extrabold text-center text-3xl md:text-4xl lg:text-6xl underline decoration-[4px]">
-        <span class="text-[#E2883A]">Presença Guarani</span><br>América do Sul
-      </h2>
+      <h5 class="font-extrabold tracking-widest text-[#510006] text-xl sm:text-2xl md:text-3xl lg:text-4xl text-left mb-2">/Onde estamos</h5>
+      <h2 id="tituloGeral" class="font-extrabold tracking-widest text-[#750f0f] mb-8 sm:mb-10 md:mb-12 text-2xl sm:text-3xl md:text-4xl lg:text-7xl text-left">Presença Guarani na America do Sul</h2>
 
       <div class="flex flex-col md:flex-row items-center md:items-start gap-[20%]">
         <!-- bloco da esquerda -->
