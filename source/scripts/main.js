@@ -2,12 +2,26 @@
 document.addEventListener('DOMContentLoaded', () => {
     const btnMenuHamburguer = document.getElementById('menuToggle');
     const menu = document.getElementById('mobileMenu');
+    
+    console.log('menuToggle encontrado:', !!btnMenuHamburguer);
+    console.log('mobileMenu encontrado:', !!menu);
+    
+    // Validar se elementos existem
+    if (!btnMenuHamburguer || !menu) {
+        console.error('Elementos do menu não encontrados');
+        return;
+    }
+    
     const lines = btnMenuHamburguer.querySelectorAll('span');
+    console.log('Linhas encontradas:', lines.length);
+    
     const body = document.body;
 
     const toggleMenu = () => {
+        console.log('Menu clicado!');
         menu.classList.toggle('translate-x-full');
         const isOpen = !menu.classList.contains('translate-x-full');
+        console.log('Menu aberto?', isOpen);
 
         btnMenuHamburguer.setAttribute('aria-expanded', String(isOpen));
         body.classList.toggle('overflow-hidden', isOpen);
@@ -24,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     btnMenuHamburguer.addEventListener('click', toggleMenu);
+    console.log('Event listener adicionado');
 
     // Fecha ao clicar em links
     menu.querySelectorAll('a').forEach(link => {
