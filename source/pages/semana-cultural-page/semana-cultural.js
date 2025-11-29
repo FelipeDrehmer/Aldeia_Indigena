@@ -97,12 +97,12 @@ async function montarPagina(resposta) {
                 const html = `
                     <section id="blocos" class="pt-4 pb-4 ${isDireita ? "blocoDireita" : "blocoEsquerda"}">
                         <div class="max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[75%] mx-auto px-4 sm:px-6 lg:px-0 flex flex-col lg:flex-row ${isDireita ? "lg:flex-row-reverse" : ""} items-center">      
-                            <div class="flex-1 bg-[${bgColor}] p-4 sm:p-6 rounded-lg overflow-hidden">
+                            <div class="flex-1 bg-[${bgColor}] sm:p-6 rounded-lg overflow-hidden">
                                 <img src="${bloco.url || ""}" alt="Imagem ${bloco.titulo || ""}"
                                     class="w-full h-full object-cover rounded-md opacity-0 ${isDireita ? "translate-x-20" : "-translate-x-20"} transition-all duration-700 ease-out imgBloco">
                             </div>
 
-                            <div class="flex-1 bg-[${bgColor}] p-4 sm:p-8 rounded-lg lg:ml-[-6rem] lg:mr-[-6rem] z-10">
+                            <div class="flex-1 bg-[${bgColor}] sm:p-8 rounded-lg lg:ml-[-6rem] lg:mr-[-6rem] z-10">
                                 <h2 class="font-extrabold tracking-widest text-orange-400 text-3xl lg:text-5xl mb-4">${bloco.titulo || ""}</h2>
                                 <p class="text-white leading-relaxed">${bloco.descricao || ""}</p>
                             </div>
